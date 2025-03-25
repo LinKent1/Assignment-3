@@ -2,92 +2,78 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
 }
 
-.section {
-    border: 1px solid #c9a3e6;
-    border-radius: 12px;
+.calculator-form {
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
     padding: 20px;
-    background-color: #faf0ff;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-
-.section:hover {
+.calculator-form:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-
-h2 {
-    text-align: center;
-    color: #6a0dad;
+legend {
     font-size: 18px;
     font-weight: bold;
+    color: #4a4a4a;
     margin-bottom: 15px;
 }
-
 
 label {
     display: block;
     font-weight: bold;
-    color: #6a0dad;
-    font-size: 13px;
-    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
 input[type="number"],
 input[type="text"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 14px;
-    border: 1px solid #d3bce6;
+    border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 15px;
     box-sizing: border-box;
-    background-color: #fdfaff;
+    background-color: #fafafa;
     color: #333;
 }
 
-#result {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    background-color: #f0e6ff;
-    border: 1px solid #d3bce6;
-    border-radius: 8px;
-    color: #6a0dad;
-    text-align: center;
-    margin-bottom: 15px;
+#poly-result {
+    min-height: 100px;
 }
 
-button {
-    padding: 10px;
+input[type="submit"] {
+    padding: 12px 20px;
     font-size: 14px;
     font-weight: bold;
     border-radius: 8px;
     width: 100%;
-    background-color: #6a0dad;
+    background-color: #ADD8E6;
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
-
-button:hover {
-    background-color: #4b0082;
-    transform: scale(1.03);
+input[type="submit"]:hover {
+    background-color: #87CEFA;
+    transform: scale(1.05);
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .container {
         grid-template-columns: 1fr;
     }
